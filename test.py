@@ -5,3 +5,7 @@
 """
 import requests
 
+url = 'https://www.baidu.com'
+resp = requests.get(url)
+resp.encoding = resp.apparent_encoding
+print(resp.text)
